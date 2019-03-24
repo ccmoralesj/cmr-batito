@@ -2,8 +2,12 @@
   "name": "cmr-batito",
   "version": "1.0.0",
   "description": "CMR system for data analysis built in Nodejs Typescript and GraphQL",
-  "main": "index.js",
   "scripts": {
+    "dev": "ts-node-dev --respawn --transpileOnly ./src/index.ts",
+    "start": "tsc && node  ./dist/inde.js",
+    "tsc": "tsc",
+    "build": "npm run tsc",
+    "clean": "rm -rf dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -11,7 +15,11 @@
     "url": "git+https://github.com/ccmoralesj/cmr-batito.git"
   },
   "keywords": [
-    "cmr"
+    "CRM",
+    "NodeJS",
+    "GraphQL",
+    "GraphQL-Yoga",
+    "Apollo"
   ],
   "author": "Cristian Camilo Morales Jimenez",
   "license": "ISC",
@@ -21,5 +29,12 @@
   "homepage": "https://github.com/ccmoralesj/cmr-batito#readme",
   "dependencies": {
     "graphql-yoga": "1.17.4"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "8.10.23",
+    "@types/ws": "6.0.1",
+    "ts-node": "8.0.3",
+    "ts-node-dev": "1.0.0-pre.32",
+    "typescript": "3.3.4000"
   }
 }
