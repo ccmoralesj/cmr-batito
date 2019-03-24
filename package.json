@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/ccmoralesj/cmr-batito/issues"
   },
-  "homepage": "https://github.com/ccmoralesj/cmr-batito#readme"
+  "homepage": "https://github.com/ccmoralesj/cmr-batito#readme",
+  "dependencies": {
+    "graphql-yoga": "1.17.4"
+  }
 }
